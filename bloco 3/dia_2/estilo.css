@@ -1,0 +1,38 @@
+h1 {
+    width: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+p {
+    font-weight: 600;
+    font-size: 3em;
+}
+
+ul {
+    background-color: orchid;
+}
+
+.cor_verde {
+    background-color: peru;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#red {
+    background-color: red;
+}
+
+#brown {
+    background-color: brown;
+}
+
+body {
+    font-size: 16px;
+    background-color: royalblue;
+    font-style: oblique;
+    line-height: 29px;
+    text-decoration: saddlebrown;
+    text-align:left;
+}
