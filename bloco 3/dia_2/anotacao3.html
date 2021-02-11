@@ -5,20 +5,31 @@
     <title>HTML</title>
     <style>
       h2 {
-        color:green 
+        color:green;
+        font-size: 2em; /* terá 2x o tamanho do body (40px). Sempre as atruibuiçoes no body predominam */
       }
 
       body{ 
         background-color: rgb(255,255,200);
+        font-size: 20px;
       }
 
-      #extinct-specie {
+      #extinct-specie { /* é a tag da id que foi atribuida no segundo parágrafo */
         background-color: red;
       }
  
-      .list-style {
+      .list-style { /* cria uma classe. diferente da id que é individual, na classe podem ser aplicadas tipologia para varias instancias distintas */
         color: hotpink;
         background-color: lavender;
+        font-weight: bold;
+        font-style: italic;
+        line-height: 40px; /* espaçamento entre as linhas */
+        text-align: center; /* alinhamento do texto */
+        text-decoration: underline; /* deixa sublinhado */
+      }
+
+      p {
+        font-family: sans-serif;
       }
 
 
@@ -125,8 +136,8 @@ DICA: APERTAR ! o VSCODE sugere um template.
 
 -->
 
-<!-- DEFININDO CORES PARA TITULOS h2 E PARA CORPO DA PAGINA
-
+<!-- DEFININDO CORES PARA TITULOS h2 E PARA CORPO DA PAGINA e lista
+<ul class="list-style">
     <style>
       h2 {
         color:green 
@@ -137,7 +148,10 @@ DICA: APERTAR ! o VSCODE sugere um template.
       }
     </style>
 
+  .list-style {
+        color: hotpink;
+        background-color: lavender;
+    
 
-
-  
+visite CSS Zen Garden para ver diferentes formas de estilização com CSS
  -->
