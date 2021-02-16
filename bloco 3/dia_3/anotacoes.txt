@@ -16,3 +16,12 @@ top: 50px;
 left: 20px; //comando top e left serve para posicionar os elementos
 z-index: 1; //elemento fica exibido em plano numero 1
 float: left //Elemento vai flutuar pela esquerda
+
+================================================================================================================================
+TERCEIRA AULA:
+
+p, div {}      //Uma forma de agrupamento de seletores
+
+li:hover //exemplo de pseudoclasse em listitem. Parametros definidos dentro deste exemplo sera definido quando pousarmos o mouse sobre ele
+li:active //ativa o elemento quando eu clico sobre ele
+
