@@ -1,0 +1,8 @@
+Alguns comandos ensinados:
+
+position: absolute //elementos se sobrepõe sobre todos os outros
+position: fixed //elementos ficam congelados em scrool
+top: 50px;
+left: 20px; //comando top e left serve para posicionar os elementos
+z-index: 1; //elemento fica exibido em plano numero 1
+float: left //Elemento vai flutuar pela esquerda
