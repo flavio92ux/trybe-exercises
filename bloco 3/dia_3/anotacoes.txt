@@ -1,4 +1,14 @@
-Alguns comandos ensinados:
+ALGUNS COMANDOS ENSINADOS:
+
+PRIMEIRA AULA:
+
+width: 80%; // Estará fixando a largura para o elemento div em 500px ou usamos valores relativos, por exemplo 80% 
+height: 200px; // fixando altura para o elemento div 
+overflow: auto; // Se estiver com visible, elementos (texto) fora do height devinido para o div vai aparecer. Se hidden, ficará oculto. Auto cria scrool */
+overflow-x: auto; // Overflow no eixo x 
+
+================================================================================================================================
+SEGUNDA AULA:
 
 position: absolute //elementos se sobrepõe sobre todos os outros
 position: fixed //elementos ficam congelados em scrool
