@@ -22,6 +22,6 @@ TERCEIRA AULA:
 
 p, div {}      //Uma forma de agrupamento de seletores
 
-li:hover //exemplo de pseudoclasse em listitem. Parametros definidos dentro deste exemplo sera definido quando pousarmos o mouse sobre ele
+li:hover //exemplo de pseudoclasse em list item. Parametros definidos dentro deste exemplo sera definido quando pousarmos o mouse sobre ele
 li:active //ativa o elemento quando eu clico sobre ele
 
