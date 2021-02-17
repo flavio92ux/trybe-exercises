@@ -1,6 +1,6 @@
 ALGUNS COMANDOS ENSINADOS:
 
-PRIMEIRA AULA:
+PRIMEIRA AULA: Modelo de Caixas - CSS
 
 width: 80%; // Estará fixando a largura para o elemento div em 500px ou usamos valores relativos, por exemplo 80% 
 height: 200px; // fixando altura para o elemento div 
@@ -8,7 +8,7 @@ overflow: auto; // Se estiver com visible, elementos (texto) fora do height devi
 overflow-x: auto; // Overflow no eixo x 
 
 ================================================================================================================================
-SEGUNDA AULA:
+SEGUNDA AULA: Posicionamento de Elementos
 
 position: absolute //elementos se sobrepõe sobre todos os outros
 position: fixed //elementos ficam congelados em scrool
@@ -18,10 +18,19 @@ z-index: 1; //elemento fica exibido em plano numero 1
 float: left //Elemento vai flutuar pela esquerda
 
 ================================================================================================================================
-TERCEIRA AULA:
+TERCEIRA AULA: Agrupamento de Seletores e Pseudoclasses
 
 p, div {}      //Uma forma de agrupamento de seletores
 
 li:hover //exemplo de pseudoclasse em listitem. Parametros definidos dentro deste exemplo sera definido quando pousarmos o mouse sobre ele
 li:active //ativa o elemento quando eu clico sobre ele
+
+================================================================================================================================
+QUARTA AULA: Combinações e Classes Descendentes
+
+p.perigo {} //A classe perigo só será aplicada para parágrafos. Se a classe estiver presente em outras classes, o que for atribuido aqui dentro nao será aplicado lá.
+
+Descendencia no CSS:
+
+ul li p{} //Um estilo específico para os p que estão dentro de li que por sua vez está dentro de ul
 
