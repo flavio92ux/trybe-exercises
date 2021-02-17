@@ -28,9 +28,9 @@ li:active //ativa o elemento quando eu clico sobre ele
 ================================================================================================================================
 QUARTA AULA: Combinações e Classes Descendentes
 
-p.perigo {} //A classe perigo só será aplicada para parágrafos. Se a classe estiver presente em outras classes, o que for atribuido aqui dentro nao será aplicado lá.
+p.perigo {} //A classe perigo só será aplicada para parágrafos. Se a classe estiver presente em outras classes, o que for 
+atribuido aqui dentro nao será aplicado lá.
 
 Descendencia no CSS:
-
 ul li p{} //Um estilo específico para os p que estão dentro de li que por sua vez está dentro de ul
 
