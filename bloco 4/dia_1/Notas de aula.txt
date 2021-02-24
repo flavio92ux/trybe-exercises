@@ -1,0 +1,11 @@
+PRIMEIRA AULA
+
+camelCase // boa prática para declarar variáveis de múltiplas palavras. Segunda palavra começa com letra maiúscula.
+
+let //permite declarar variáveis e ser reatribuídas
+const //é uma contante. Uma vez uma variável ser declarada com o tipo cont, ela não pode ser reatribuída.
+
+console.log(var) //permite mostrar resoltado da variável na tela.
+
+
+
