@@ -7,5 +7,8 @@ const //é uma contante. Uma vez uma variável ser declarada com o tipo cont, el
 
 console.log(var) //permite mostrar resoltado da variável na tela.
 
+========================================================================================================================
+CONTEÚDO AULA AO VIVO
 
-
+Dica: Selecionar a linha do console.log mostra o conteúdo só do que foi selecionado.
+breakpoint vscode: é onde se define onde o código para no item "run and debug"
