@@ -1,17 +1,22 @@
-//Fiz copia deste codigo, vou procurar entende-lo melhor depois
-
-let base = 5;
+let n = 5;
 let symbol = '*';
-let middle = (base - 1);
 let inputLine = '';
+let delimitadorCenter = Math.trunc(n / 2) + 1;
+let delimitadorRight = delimitadorCenter - 1;
+let delimitadorLeft = delimitadorCenter + 1;
 
+for (let indexRow = 1; indexRow <= delimitadorCenter; indexRow += 1) {
 
+  for (let indexColumn = 1; indexColumn <= n; indexColumn += 1) {
 
-for (let index = 1; index <= base; index += 1) {
-
-  inputLine = inputLine.trim();
-
-  inputLine = ' '.repeat(middle) + inputLine + (index > 1 ? ' ' : '') + symbol;
+    if (indexColumn > delimitadorRight && indexColumn < delimitadorLeft) {
+      inputLine += symbol;
+    } else {
+      inputLine += ' ';
+    }
+  }
   console.log(inputLine);
-  middle--;
+  inputLine = '';
+  delimitadorLeft += 1;
+  delimitadorRight -= 1;
 }
