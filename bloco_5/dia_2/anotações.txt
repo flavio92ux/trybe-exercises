@@ -1,0 +1,17 @@
+A propriedade parentNode acessa o elemento pai do elemento sobre o qual a 
+propriedade é chamada. Mas ela não é a única forma de, a partir de um 
+elemento, navegar para outros.
+
+Há, ao todo, as seguintes propriedades:
+
+parentNode: retorna o elemento pai.
+childNodes: retorna um array com todos os elementos filhos;
+firstChild: retorna o primeiro filho
+lastChild: retorna o último filho
+nextSibling: retorna o próximo nó.
+previousSibling: retorna o nó anterior.
+nextElementSibling: retorna o próximo elemento.
+previousElementSibling: retorna o elemento anterior.
+
+É importante dizer que, à primeira vista, as propriedades nextSibling e nextElementSibling parecem fazer a mesma coisa, 
+mas uma pega o próximo nó do DOM, enquanto a outra pega o próximo elemento, e nem sempre o próximo nó é um elemento, como veremos abaixo.
