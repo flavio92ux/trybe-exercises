@@ -4,7 +4,7 @@ tipos de evento: click, dbclick, mouseover, mouseleave, keydown, scroll, change.
 
 EXEMPLO 1: Tela carregada
 
-windows.onload = jsCarregado //Quando a tela for carregada, chama a função jsCarregado
+windows.onload = jsCarregado //Quando a tela for carregada, chama a função jsCarregado.
 
 function jsCarregado() {
 	alert('Página foi carregada');
