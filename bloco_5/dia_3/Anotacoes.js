@@ -2,7 +2,15 @@ addEventListener(TipoEvento, função);
 
 tipos de evento: click, dbclick, mouseover, mouseleave, keydown, scroll, change.
 
-EXEMPLO 1: click
+EXEMPLO 1: Tela carregada
+
+windows.onload = jsCarregado //Quando a tela for carregada, chama a função jsCarregado
+
+function jsCarregado() {
+	alert('Página foi carregada');
+}
+
+EXEMPLO 2: click
 
 	let clickP = document.getElementById("clicar");
 
@@ -13,7 +21,7 @@ EXEMPLO 1: click
 		console.log(eventoDeOrigem.type);
 	}
 
-EXEMPLO 2: Mouseover, mouse leave
+EXEMPLO 3: Mouseover, mouse leave
 	let mouseOverLeaveButton = document.getElementById('mouse-over-leave');
 
 	mouseOverLeaveButton.addEventListener('mouseover', mouseEmCima); //Adiciona o evento de mouse over
