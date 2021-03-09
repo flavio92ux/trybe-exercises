@@ -225,43 +225,22 @@ taskSelected();
 //    Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração
 //    inicial rgb(119,119,119)
 
-
-function setDayColor() {
-  let selectedTask = document.getElementsByClassName('task selected');
+function changeColorWhenDayClick() {
+  let buttonSelected = document.getElementsByClassName('task selected');
+  console.log(buttonSelected);
+  let buttonNoSelected = document.querySelector('.task'); 
+  let colorButton = buttonNoSelected.style.backgroundColor;
   let days = document.querySelector('#days');
-  let taskDiv = document.querySelector('.task');
-  let taskColor = taskDiv.style.backgroundColor;
-  
+
   days.addEventListener('click', function(event){
-    let eventTargetColor = event.target.style.color;
-    if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
-      let color = selectedTask[0].style.backgroundColor;
-      event.target.style.color = color;
-    } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
+    if (buttonSelected.length > 0 && event.target.style.color != colorButton) {
+      event.target.style.color = colorButton;
+    } else {
       event.target.style.color = 'rgb(119,119,119)';
     }
+
   });
-};
-
-setDayColor();
-
-
-
-/* function putColorInDay () {
-  let selectedDay = document.getElementsByClassName('day');
-  let selected = document.getElementsByClassName('selected');
-
-  for (index = 0; index < selectedDay.length; index += 1) {
-    selectedDay[index].addEventListener('click', changeColor);
-
-    function changeColor () {
-      if (selected.length !== 0) {
-        selectedDay[index].style.backgroundColor = selectedDay.style.Color;
-      } else {
-        selectedDay[index].style.backgroundColor = 'rgb(119,119,119)';
-      }
-    }
   }
-}
 
-putColorInDay(); */
+
+changeColorWhenDayClick();
