@@ -227,20 +227,21 @@ taskSelected();
 
 function changeColorWhenDayClick() {
   let buttonSelected = document.getElementsByClassName('task selected');
-  console.log(buttonSelected);
-  let buttonNoSelected = document.querySelector('.task'); 
+  let buttonNoSelected = document.getElementsByClassName('task')[0]; 
   let colorButton = buttonNoSelected.style.backgroundColor;
   let days = document.querySelector('#days');
 
-  days.addEventListener('click', function(event){
+  days.addEventListener('click', olaMundo);
+
+  function olaMundo(event) {
     if (buttonSelected.length > 0 && event.target.style.color != colorButton) {
       event.target.style.color = colorButton;
-    } else {
+      console.log(colorButton);
+    } else if (buttonSelected.length !== 0 && event.target.style.color === colorButton) {
       event.target.style.color = 'rgb(119,119,119)';
     }
-
-  });
   }
+}
 
 
 changeColorWhenDayClick();
