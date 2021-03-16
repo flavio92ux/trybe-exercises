@@ -5,65 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <form action="" method="GET" enctype="multipart/form-data">
-    <fieldset>
+  <form class="form" action="" method="GET" enctype="multipart/form-data">
+    <fieldset class="lines-fields">
       <legend>Preencha os campos</legend>
-      <label for="name">Nome:
-        <input type="text" id="name" maxlength="40" required>
-      </label>
-      <br>
+      <div>
+        <label for="name">Nome:
+          <input type="text" id="name" maxlength="40" required>
+        </label>
+     </div>
+    <div>
       <label for="email">E-mail:
         <input type="email" id="email" maxlength="50" required>
       </label>
-      <br>
+    </div>
+    <div>
       <label for="cpf">CPF:
         <input type="text" id="cpf" maxlength="11" required>
       </label>
-      <br>
+    </div>
+    <div>
       <label for="address">Endereço:
         <input type="text" id="address" maxlength="200" required>
       </label>
-      <br>
+    </div>
+    <div>
       <label for="city">Cidade:
         <input type="text" id="city" maxlength="28" required>
       </label>
+    </div>
+    <div>
       <label for="state">Selecione o estado
         <select id="state" required></select>
       </label>
-      <br>
+    </div>
+    <div>
       <label for="casa">Casa
         <input type="radio" id="casa" name="morada">
       </label>
+    </div>
+    <div>
       <label for="apartamento">Apartamento
         <input type="radio" id="apartamento" name="morada">
       </label>
+    </div>
     </fieldset>
 
-    <fieldset>
-      <label for="curriculum-summary">Resumo curriculo:
-        <textarea id="curriculum-summary" placeholder="Coloque aqui o resumo do seu curriculo" maxlength="1000" required></textarea>
-      </label>
-      <br>
-      <label for="office">Cargo:
-        <input type="text" id="office" maxlength="40" required>
-      </label>
+    <fieldset class="lines-fields">
+      <div>
+        <label for="office">Cargo:
+          <input type="text" id="office" maxlength="40" required>
+        </label>
+     </div>
+     <div>
       <label for="office-description">Descrição do cargo
         <input type="text" id="office-description" maxlength="500" required> 
       </label>
-
+    </div>
+    <div>
       <label for="begin-date">Data de inicio
         <input type="text" id="begin-date" required>
       </label>
+    </div>
       <div>
         <button id="submit" type="submit">Enviar!</button>
       </div>
-      
-      
-      
-
-
+      <div id="clean">
+        <button id="clean" type="reset">Limpar!</button>
+      </div>
+      <div id="curriculum">
+        <label for="curriculum-summary">Resumo curriculo:
+          <textarea id="curriculum-summary" placeholder="Coloque aqui o resumo do seu curriculo" maxlength="1000" required></textarea>
+        </label>
+      </div>
     </fieldset>
 
 
