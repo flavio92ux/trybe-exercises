@@ -1,6 +1,7 @@
 const stateHeader = document.getElementById('state');
 const dateBegin = document.getElementById('begin-date');
 const btnSubmit = document.getElementById('submit');
+const btnClean = document.getElementById('clean')
 
 const states = [
     'AC - Acre',
@@ -38,12 +39,32 @@ for (let key in states) {
   stateHeader.appendChild(myElement);
 }
 
+function renderCurriculum(event) {
+  event.preventDefault();
+  const formElements = document.querySelectorAll('input');
+  if (!checkDate()) {
+    return 0;
+  }
+  for (let index = 0; index < formElements.length; index += 1) {
+    if (formElements[index].type === 'radio' && !formElements[index].checked) {
+      continue;
+    }
+    const userInput = formElements[index].value;
+    const dataUser = document.querySelector('.form-data');  
+    const div = document.createElement('div');
+    div.className = 'div-curriculum';
+    div.innerHTML = userInput;
+    dataUser.appendChild(div);  
+ }
+}
+
 function checkDate() {
   const inputContent = dateBegin.value;
-  ;
-  if (verifyCharacters(inputContent)) {
-    verifyDate(inputContent);
+
+  if (verifyCharacters(inputContent) && verifyDate(inputContent)) {
+    return 1;
   } 
+  return 0;
 }
 
 function verifyDate(event) {
@@ -70,9 +91,15 @@ function verifyCharacters(event) {
     window.alert('Formato de data inválido!'); 
     return 0;
   }
-
   return 1;
-
 }
 
-btnSubmit.addEventListener('click', checkDate);
+function clearDiv() {
+  const myRender = document.querySelector('.form-data');
+  while (myRender.firstChild) {
+    myRender.removeChild(myRender.lastChild);
+  }
+}
+
+btnClean.addEventListener('click', clearDiv);
+btnSubmit.addEventListener('click', renderCurriculum);
