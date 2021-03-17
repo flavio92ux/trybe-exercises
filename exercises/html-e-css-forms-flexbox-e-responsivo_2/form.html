@@ -9,67 +9,111 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <form action="" method="get">
-      <legend>Preencha os campos</legend>
-      <div>
-        <label for="name">Nome:</label>
-        <input type="text" name="name" id="name" maxlength="40" required>
-      </div>
-      <div>
-        <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email" maxlength="50" required>
-      </div>
-      <div>
-        <label for="cpf">CPF:</label>
-        <input type="text" name="cpf" id="cpf" maxlength="11" required>
-      </div>
-      <div>
-        <label for="address">Endereço:</label>
-        <input type="text" name="address" id="address" maxlength="200" required>
-      </div>
-      <div>
-        <label for="city">Cidade:</label>
-        <input type="text" name="city" id="city" maxlength="28" required>
-      </div>
-      <div>
-        <label for="state">Selecione o estado</label>
-        <select id="state" name="state" required></select>
-      </div>
-      <div>
-        <label for="casa">Casa</label>
-        <input type="radio" id="casa" name="morada" value="casa" required>
-      </div>
-      <div>
-        <label for="apartamento">Apartamento</label>
-        <input type="radio" id="apartamento" name="morada" value="apartamento" required>  
-      </div>
-    </fieldset>
+      <section class="section has-text-centered">
+        <header class="">
+          <h1 class="title">Curriculum generator</h1>
+          <p class="subtitle">Gere seu currúculo a partir do preenchimento dos campos abaixo</p>
+        </header>
+      </section>
 
-    <fieldset class="lines-fields">
-      <div>
-        <label for="office">Cargo:</label>
-        <input type="text" name="office" id="office" maxlength="40" required> 
-      </div>
-      <div>
-        <label for="office-description">Descrição do cargo:</label>
-        <input type="text" name="office-description" id="office-description" maxlength="500" required> 
-      </div>
-      <div>
-        <label for="begin-date">Data de inicio:</label>
-        <input type="text" name="begin-date" id="begin-date" required>
-      </div>
-      <div>
-        <button id="submit" type="submit">Enviar</button>
-      </div>
-      <div id="clean">
-        <button id="clean" type="reset">Limpar</button>
-      </div>
-      <div id="curriculum">
-        <label for="curriculum-summary">Resumo curriculo:</label>
-        <textarea id="curriculum-summary" placeholder="Coloque aqui o resumo do seu curriculo" maxlength="1000" required></textarea>
-      </div>
-  </form>
+      <hr>
+
+      <form action="" method="get">
+        <div class="field">
+          <label for="name">Nome:</label>
+          <div class="control">
+            <input class="input" placeholder="Digite seu nome" type="text" name="name" id="name" maxlength="40" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label" for="email">E-mail:</label>
+          <div class="control">
+            <input class="input" placeholder="Digite seu e-mail" type="email" name="email" id="email" maxlength="50" required>
+          </div>
+        </div>
+
+        <div class="field"> 
+          <label class="label" for="cpf">CPF:</label>
+          <div class="control">
+            <input class="input" placeholder="Digite seu CPF" type="text" name="cpf" id="cpf" maxlength="11" required>
+          </div>
+        </div>
+      
+        <div class="field">
+          <label class="label" for="address">Endereço:</label>
+          <div class="control">
+            <input class="input" placeholder="Digite seu endereço" type="text" name="address" id="address" maxlength="200" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label" for="city">Cidade:</label>
+          <div class="control">
+            <input class="input" placeholder="Cidade" type="text" name="city" id="city" maxlength="28" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label" for="state">Selecione o estado</label>
+          <div class="control">
+            <select class="select" id="state" name="state" required></select>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <label class="radio" for="casa">
+              <input type="radio" id="casa" name="morada" value="casa" required>
+              Casa
+            </label>
+            <label class="radio">
+              <input type="radio" id="apartamento" name="morada" value="apartamento" required>
+              Apartamento
+            </label>
+          </div>
+        </div>
+        
+        <div class="field">
+          <label class="label" for="office">Cargo:</label>
+          <div class="control">
+            <input class="input" type="text" name="office" id="office" maxlength="40" required> 
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label" for="office-description">Descrição do cargo:</label>
+          <div class="control">
+            <input class="input" type="text" name="office-description" id="office-description" maxlength="500" required> 
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label" for="begin-date">Data de inicio:</label>
+          <div class="control">
+            <input class="input" type="text" name="begin-date" id="begin-date" required>
+          </div>
+        </div>
+
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link" id="submit" type="submit">Enviar</button>
+          </div>
+          <div class="control" id="clean">
+            <button class="button" id="clean" type="reset">Limpar</button>
+          </div>
+        </div>
+     
+        <div class="field" id="curriculum">
+          <label class="label" for="curriculum-summary">Resumo curriculo:</label>
+          <div class="control">
+            <textarea class="textarea" id="curriculum-summary" placeholder="Coloque aqui o resumo do seu curriculo" maxlength="1000" required></textarea>
+          </div>
+        </div>
+     </form>
+
   <section class="form-data"></section>
+
   <script src="script.js"></script>
 </body>
 </html>
