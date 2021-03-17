@@ -41,10 +41,11 @@ for (let key in states) {
 
 function renderCurriculum(event) {
   event.preventDefault();
-  const formElements = document.querySelectorAll('input');
+  clearDiv();
   if (!checkDate()) {
     return 0;
   }
+  const formElements = document.querySelectorAll('input');
   for (let index = 0; index < formElements.length; index += 1) {
     if (formElements[index].type === 'radio' && !formElements[index].checked) {
       continue;
@@ -56,7 +57,17 @@ function renderCurriculum(event) {
     div.innerHTML = userInput;
     dataUser.appendChild(div);  
  }
+ catchTextArea();
 }
+
+ function catchTextArea() {
+  const myTextArea = document.querySelector('.textarea').value;
+  const myForm = document.querySelector('.form-data');
+  const myDiv = document.createElement('div');
+  myDiv.innerHTML = myTextArea;
+  myForm.appendChild(myDiv);
+}
+
 
 function checkDate() {
   const inputContent = dateBegin.value;

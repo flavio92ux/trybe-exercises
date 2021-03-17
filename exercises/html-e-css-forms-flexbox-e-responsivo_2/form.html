@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,13 +55,6 @@
         </div>
 
         <div class="field">
-          <label class="label" for="state">Selecione o estado</label>
-          <div class="control">
-            <select class="select" id="state" name="state" required></select>
-          </div>
-        </div>
-
-        <div class="field">
           <div class="control">
             <label class="radio" for="casa">
               <input type="radio" id="casa" name="morada" value="casa" required>
@@ -71,6 +64,13 @@
               <input type="radio" id="apartamento" name="morada" value="apartamento" required>
               Apartamento
             </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label" for="state">Selecione o estado</label>
+          <div class="control">
+            <select class="select" id="state" name="state" required></select>
           </div>
         </div>
         
@@ -94,15 +94,6 @@
             <input class="input" type="text" name="begin-date" id="begin-date" required>
           </div>
         </div>
-
-        <div class="field is-grouped">
-          <div class="control">
-            <button class="button is-link" id="submit" type="submit">Enviar</button>
-          </div>
-          <div class="control" id="clean">
-            <button class="button" id="clean" type="reset">Limpar</button>
-          </div>
-        </div>
      
         <div class="field" id="curriculum">
           <label class="label" for="curriculum-summary">Resumo curriculo:</label>
@@ -110,10 +101,22 @@
             <textarea class="textarea" id="curriculum-summary" placeholder="Coloque aqui o resumo do seu curriculo" maxlength="1000" required></textarea>
           </div>
         </div>
+
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link" id="submit" type="submit">Gerar</button>
+          </div>
+          <div class="control" id="clean">
+            <button class="button" id="clean" type="reset">Limpar</button>
+          </div>
+        </div>
+
      </form>
 
-  <section class="form-data"></section>
+  <section class="form-data bellow"></section>
 
+  <script src="DatePickerX.min.js"></script>
   <script src="script.js"></script>
+  
 </body>
 </html>

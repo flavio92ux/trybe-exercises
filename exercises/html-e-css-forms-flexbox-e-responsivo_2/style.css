@@ -1,6 +1,10 @@
 body {
-  max-width: 800px;
-  width: 80%;
+  max-width: 900px;
+  width: 90%;
   margin: auto;
+}
+
+.bellow {
+  margin-top: 50px;
 }
 
