@@ -1,0 +1,19 @@
+body {
+    background-color:cornsilk;
+}
+
+.lines-fields div {
+    padding: 10px;
+    display: inline-block;
+}
+
+#curriculum {
+    display: block;
+}
+
+#curriculum-summary {
+    width: 1500px;
+    height: 100px;
+    resize: none;
+    
+}

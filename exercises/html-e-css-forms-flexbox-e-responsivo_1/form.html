@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="" method="get">
+    <fieldset class="lines-fields">
+      <legend>Preencha os campos</legend>
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name" maxlength="40" required>
+      </div>
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" maxlength="50" required>
+      </div>
+      <div>
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf" id="cpf" maxlength="11" required>
+      </div>
+      <div>
+        <label for="address">Endereço:</label>
+        <input type="text" name="address" id="address" maxlength="200" required>
+      </div>
+      <div>
+        <label for="city">Cidade:</label>
+        <input type="text" name="city" id="city" maxlength="28" required>
+      </div>
+      <div>
+        <label for="state">Selecione o estado</label>
+        <select id="state" name="state" required></select>
+      </div>
+      <div>
+        <label for="casa">Casa</label>
+        <input type="radio" id="casa" name="morada" value="casa" required>
+      </div>
+      <div>
+        <label for="apartamento">Apartamento</label>
+        <input type="radio" id="apartamento" name="morada" value="apartamento" required>  
+      </div>
+    </fieldset>
+
+    <fieldset class="lines-fields">
+      <div>
+        <label for="office">Cargo:</label>
+        <input type="text" name="office" id="office" maxlength="40" required> 
+      </div>
+      <div>
+        <label for="office-description">Descrição do cargo:</label>
+        <input type="text" name="office-description" id="office-description" maxlength="500" required> 
+      </div>
+      <div>
+        <label for="begin-date">Data de inicio:</label>
+        <input type="text" name="begin-date" id="begin-date" required>
+      </div>
+      <div>
+        <button id="submit" type="submit">Enviar</button>
+      </div>
+      <div id="clean">
+        <button id="clean" type="reset">Limpar</button>
+      </div>
+      <div id="curriculum">
+        <label for="curriculum-summary">Resumo curriculo:</label>
+        <textarea id="curriculum-summary" placeholder="Coloque aqui o resumo do seu curriculo" maxlength="1000" required></textarea>
+      </div>
+    </fieldset>
+  </form>
+  <section class="form-data"></section>
+  <script src="script.js"></script>
+</body>
+</html>
