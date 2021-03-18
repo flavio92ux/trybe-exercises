@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <section class="section has-text-centered">
+        <header class="">
+          <h1 class="title">Curriculum generator</h1>
+          <p class="subtitle">Gere seu currúculo a partir do preenchimento dos campos abaixo</p>
+        </header>
+      </section>
+
+      <hr>
+
+      <form action="" method="get">
+        <div class="field">
+          <label for="name">Nome:</label>
+          <div class="control">
+            <input class="input" placeholder="Digite seu nome" type="text" name="name" id="name" maxlength="40" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label" for="email">E-mail:</label>
+          <div class="control">
+            <input class="input" placeholder="Digite seu e-mail" type="email" name="email" id="email" maxlength="50" required>
+          </div>
+        </div>
+
+        <div class="field"> 
+          <label class="label" for="cpf">CPF:</label>
+          <div class="control">
+            <input class="input" placeholder="Digite seu CPF" type="text" name="cpf" id="cpf" maxlength="11" required>
+          </div>
+        </div>
+      
+        <div class="field">
+          <label class="label" for="address">Endereço:</label>
+          <div class="control">
+            <input class="input" placeholder="Digite seu endereço" type="text" name="address" id="address" maxlength="200" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label" for="city">Cidade:</label>
+          <div class="control">
+            <input class="input" placeholder="Cidade" type="text" name="city" id="city" maxlength="28" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <label class="radio" for="casa">
+              <input type="radio" id="casa" name="morada" value="casa" required>
+              Casa
+            </label>
+            <label class="radio">
+              <input type="radio" id="apartamento" name="morada" value="apartamento" required>
+              Apartamento
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label" for="state">Selecione o estado</label>
+          <div class="control">
+            <select class="select" id="state" name="state" required></select>
+          </div>
+        </div>
+        
+        <div class="field">
+          <label class="label" for="office">Cargo:</label>
+          <div class="control">
+            <input class="input" type="text" name="office" id="office" maxlength="40" required> 
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label" for="office-description">Descrição do cargo:</label>
+          <div class="control">
+            <input class="input" type="text" name="office-description" id="office-description" maxlength="500" required> 
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label" for="begin-date">Data de inicio:</label>
+          <div class="control">
+            <input class="input" type="date" name="begin-date" id="begin-date" required>
+          </div>
+        </div>
+     
+        <div class="field" id="curriculum">
+          <label class="label" for="curriculum-summary">Resumo curriculo:</label>
+          <div class="control">
+            <textarea class="textarea" id="curriculum-summary" placeholder="Coloque aqui o resumo do seu curriculo" maxlength="1000" required></textarea>
+          </div>
+        </div>
+
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link" id="submit" type="submit">Gerar</button>
+          </div>
+          <div class="control" id="clean">
+            <button class="button" id="clean" type="reset">Limpar</button>
+          </div>
+        </div>
+
+     </form>
+
+  <section class="form-data bellow"></section>
+
+  <script src="DatePickerX.min.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>
