@@ -78,6 +78,8 @@ function checkDate() {
   return 0;
 }
 
+
+
 function verifyDate(event) {
   const day = parseInt(event[0]+event[1]);
   const month = parseInt(event[3]+event[4]);
@@ -104,6 +106,8 @@ function verifyCharacters(event) {
   }
   return 1;
 }
+
+
 
 function clearDiv() {
   const myRender = document.querySelector('.form-data');
