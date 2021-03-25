@@ -44,7 +44,7 @@ const order = {
   },
 };
 
-/* const customerInfo = (order) => {
+const customerInfo = (order) => {
   const deliveryPerson = order.order.delivery.deliveryPerson;
   const destination = order.name;
   const phone = order.phoneNumber;
@@ -57,7 +57,7 @@ const order = {
 
 }
 
-customerInfo(order); */
+customerInfo(order);
 
 const orderModifier = (order) => {
   const newOrder = {
@@ -65,7 +65,7 @@ const orderModifier = (order) => {
     payment: {
       total: 50,
     }
-  }
+  };
 
   Object.assign(order, newOrder);
 
