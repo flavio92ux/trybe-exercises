@@ -44,7 +44,7 @@ const order = {
   },
 };
 
-const customerInfo = (order) => {
+/* const customerInfo = (order) => {
   const deliveryPerson = order.order.delivery.deliveryPerson;
   const destination = order.name;
   const phone = order.phoneNumber;
@@ -57,10 +57,22 @@ const customerInfo = (order) => {
 
 }
 
-customerInfo(order);
+customerInfo(order); */
 
 const orderModifier = (order) => {
-  // Adicione abaixo as informações necessárias.
+  const newOrder = {
+    name: 'Luiz Silva',
+    payment: {
+      total: 50,
+    }
+  }
+
+  Object.assign(order, newOrder);
+
+  const name = order.name;
+  const payment = order.payment.total;
+
+  console.log(`Olá ${name}, o total do seu pedido de muzzarela, calabresa e Coca-Cola Zero é R$${payment}`);
 
 }
 
