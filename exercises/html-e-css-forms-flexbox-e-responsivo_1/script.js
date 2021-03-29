@@ -40,6 +40,7 @@ for (let key in states) {
 }
 
 function renderCurriculum(event) {
+  console.log(event);
   event.preventDefault();
   const formElements = document.querySelectorAll('input');
   if (!checkDate()) {
