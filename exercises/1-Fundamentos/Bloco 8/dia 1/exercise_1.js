@@ -8,15 +8,15 @@ const employeeGenerator = (fullName) => {
   return { fullName, email: `${email}@trybe.com` };
 };
 
-const newEmployees = (callback) => {
+const newEmployees = () => {
   const employees = {
-    id1: callback('Pedro Guerra'), 
-    id2: callback('Luiza Drumond'), 
-    id3: callback('Carla Paiva')
+    id1: employeeGenerator('Pedro Guerra'), 
+    id2: employeeGenerator('Luiza Drumond'), 
+    id3: employeeGenerator('Carla Paiva')
 }
   return employees;
 };
 
-console.log(newEmployees(employeeGenerator));
+console.log(newEmployees());
 
 
