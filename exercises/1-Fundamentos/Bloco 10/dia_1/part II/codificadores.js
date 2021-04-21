@@ -14,7 +14,10 @@ const decode = (str) => {
             .replace(/[5]/g, 'u');
 }
 
-module.exports = encode, decode;
+const functions = { encode, decode };
+module.exports = functions;
+
+
 
 
 
